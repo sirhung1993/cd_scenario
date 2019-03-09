@@ -17,3 +17,9 @@ prediction model?
 Please return:
 1. Your answers to the above
 2. The JSON file output from above
+
+## System requirements
+- Java > 8.x
+- Scala 2.11
+- Spark 2.4.0
+- sbt 1.2.7
