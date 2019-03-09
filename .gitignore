@@ -4,5 +4,4 @@ src/main/scala/ssrs/Test.scala
 project
 src/main/scala/ssrs/trait/TraitSubJob.scala
 git
-*.conf
 *.zip
