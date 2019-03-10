@@ -26,7 +26,6 @@ CREATE TABLE Leaders (
 	Telemarketing BOOLEAN
 );
 
-DROP TABLE test.Leaders;
 CREATE TABLE JobTitles (
 	Id TINYINT UNSIGNED,
 	Title VARCHAR(100),
@@ -153,3 +152,7 @@ ALTER TABLE Leaders ADD CONSTRAINT FK_Leaders_makertingUnitId FOREIGN KEY (maker
 ALTER TABLE Leaders ADD CONSTRAINT FK_Leaders_orderTypeId FOREIGN KEY (orderTypeId) REFERENCES OrderType(Id);
 
 ALTER TABLE Leaders ADD CONSTRAINT FK_Leaders_typeOfDeploymetId FOREIGN KEY (typeOfDeploymentId) REFERENCES TypeOfDeployments(Id);
+
+ALTER TABLE Location ADD CONSTRAINT FK_Location_cityId FOREIGN KEY (cityId) REFERENCES Cities(Id);
+
+ALTER TABLE Cities ADD CONSTRAINT FK__Cities_State FOREIGN KEY (stateId) REFERENCES States(Id);
